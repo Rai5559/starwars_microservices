@@ -50,7 +50,7 @@ planetSchema.statics.createPlanet = function (planet) {
     });
 };
 
-planetSchema.statics.updatePlanet = function (id, planet) {
+planetSchema.statics.update2 = function (id, planet) {
   return this.findByIdAndUpdate(id, planet, { new: true })
     .then(planet => {
       return planet;
@@ -60,7 +60,7 @@ planetSchema.statics.updatePlanet = function (id, planet) {
     });
 };
 
-planetSchema.statics.deletePlanet = function (id) {
+planetSchema.statics.delete2 = function (id) {
   return this.findByIdAndDelete(id)
     .then(planet => {
       return planet;

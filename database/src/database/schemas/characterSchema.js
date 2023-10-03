@@ -49,7 +49,7 @@ characterSchema.statics.createCharacter = function (character) {
     });
 };
 
-characterSchema.statics.updateCharacter = function (id, character) {
+characterSchema.statics.update2 = function (id, character) {
   return this.findByIdAndUpdate(
     id,
     character,
@@ -63,7 +63,7 @@ characterSchema.statics.updateCharacter = function (id, character) {
     });
 };
 
-characterSchema.statics.deleteCharacter = function (id) {
+characterSchema.statics.delete2 = function (id) {
   return this.findByIdAndDelete(id)
     .then(character => {
       return character;

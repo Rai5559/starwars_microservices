@@ -47,7 +47,7 @@ filmSchema.statics.createFilm = function (film) {
     });
 };
 
-filmSchema.statics.updateFilm = function (id, film) {
+filmSchema.statics.update2 = function (id, film) {
   return this.findByIdAndUpdate(id, film, { new: true })
     .then(film => {
       return film;
@@ -57,7 +57,7 @@ filmSchema.statics.updateFilm = function (id, film) {
     });
 };
 
-filmSchema.statics.deleteFilm = function (id) {
+filmSchema.statics.delete2 = function (id) {
   return this.findByIdAndDelete(id)
     .then(film => {
       return film;
